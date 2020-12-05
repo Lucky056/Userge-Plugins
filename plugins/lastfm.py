@@ -104,10 +104,10 @@ if Config.LASTFM_API_KEY and Config.LASTFM_USERNAME:
         if lastimg:
             result += f"[\u200c]({lastimg['#text']})"
         result += f"<b>LastFM User Info for [{lfmuser}]({lastuser['url']})</b>:\n"
-        result += f" {gender}<b>Name:</b> {lastuser["realname"]}\n"
+        result += f" {gender}<b>Name:</b> {lastuser['realname']}\n"
         if age != "0":
             result += f" 🎂 <b>Age:</b> {age}\n"
-        result += f" 🎵 <b>Total Scrobbles:</b> {lastuser["playcount"]}\n"
+        result += f" 🎵 <b>Total Scrobbles:</b> {lastuser['playcount']}\n"
         result += f" 🌍 <b>Country:</b> {lastuser['country']}\n"
         if playlist != "0":
             result += f" ▶️ <b>Playlists:</b> {playlist}\n"
